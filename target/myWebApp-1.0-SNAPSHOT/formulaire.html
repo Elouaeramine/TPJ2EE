@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+</head>
+<body>
+<form method="get" action="ServletTraitement">
+    Nom : <input type="text" name="nom"> <br/>
+    Prenom :<input type="text" name="prenom"> <br/>
+    Sexe: <br/><input type="radio" name="sexe" value="M" checked> Male<br/>
+    <input type="radio" name="sexe" value="F">Female<br/>
+    Loisirs:<br/><input type="checkbox" name ="loisirs" value="lecture"> Lecture<br/>
+    <input type="checkbox" name ="loisirs" value="sport">Sport<br/>
+    <input type="checkbox" name ="loisirs" value="voyage">Voyage<br/>
+    <select name="fonction" id="fonction">
+        <option value="Etudiant" selected>Etudiant</option>
+        <option value="Ingenieur">Ingénieur</option>
+        <option value="Enseignant">Enseignant</option>
+        <option value="Retraite" >Retraité</option>
+        <option value="Autre" >Autre</option>
+    </select>
+    <input type="submit" value="Envoyer"><br/>
+    <a href="ServletTraitement?prenom=foulen&nom=fouleni">lien </a>
+</form>
+</body>
+</html>
